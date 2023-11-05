@@ -1,0 +1,10 @@
+.board {
+    width: 500px;
+    height: 500px;
+    background-color: #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    margin: auto; /* Center the board on the page */
+  }

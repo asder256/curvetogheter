@@ -1,0 +1,11 @@
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #e41919; /* Dark gray color */
+    border-radius: 50%; /* Make it circular */
+    position: absolute; /* Position it absolutely within the board */
+    top: 50%; /* Center it vertically */
+    left: 50%; /* Center it horizontally */
+    transform: translate(-50%, -50%); /* Offset the position by half its size to truly center it */
+    transition: top 0.1s ease, left 0.1s ease; /* Smooth transition for top and left properties */
+  }
