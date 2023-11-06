@@ -15,10 +15,10 @@ const Board: React.FC = () => {
     }
 
     // Check for self collisions (if the new position matches any trail position)
-    if (trail.some(trailPos => trailPos.x === newPosition.x && trailPos.y === newPosition.y)) {
-      setCollisionMessage('Hit itself!');
-      return true;
-    }
+    // if (trail.some(trailPos => trailPos.x === newPosition.x && trailPos.y === newPosition.y)) {
+    //   setCollisionMessage('Hit itself!');
+    //   return true;
+    // }
 
     return false;
   };
@@ -54,7 +54,7 @@ const Board: React.FC = () => {
     }
   };
   useEffect(() => {
-    const intervalId = setInterval(moveDot, 100); // Move the dot every 200ms
+    const intervalId = setInterval(moveDot, 16,666666666666668); // Move the dot every 200ms
     window.addEventListener('keydown', handleKeyDown);
     return () => {
       clearInterval(intervalId);
@@ -64,11 +64,11 @@ const Board: React.FC = () => {
 
   return (
     <div className="board">
-      {trail.map((pos, index) => (
+      {/* {trail.map((pos, index) => (
         <Dot key={index} style={{ top: `${pos.y}%`, left: `${pos.x}%`, opacity: (0 + index / 10).toString() }} />
-      ))}
+      ))} */}
       <Dot style={{ top: `${position.y}%`, left: `${position.x}%` }} />
-      <h2>This is the game board!</h2>
+      {/* <h2>This is the game board!</h2> */}
       {collisionMessage && <div className="collision-message">{collisionMessage}</div>}
     </div>
   );
