@@ -1,10 +1,10 @@
 .board {
-    width: 500px;
-    height: 500px;
-    background-color: #eaeaea;
-    display: flex;
-    align-items: center;
+    width: 80vw;
+    height: 90vh;
+    background-color: #8d8080;
+    /* display: flex; */
+    /* align-items: center; */
     justify-content: center;
     border: 2px solid black;
-    margin: auto; /* Center the board on the page */
+    margin-left: 50px; /* Center the board on the page */
   }
